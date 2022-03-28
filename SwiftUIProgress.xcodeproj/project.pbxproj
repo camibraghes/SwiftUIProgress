@@ -12,6 +12,7 @@
 		992E652127F1B6EF00EF3324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992E652027F1B6EF00EF3324 /* Assets.xcassets */; };
 		992E652427F1B6EF00EF3324 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992E652327F1B6EF00EF3324 /* Preview Assets.xcassets */; };
 		992E652B27F1B71000EF3324 /* LongPressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E652A27F1B71000EF3324 /* LongPressGesture.swift */; };
+		992E652D27F1C54200EF3324 /* MagnificationGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E652C27F1C54200EF3324 /* MagnificationGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		992E652027F1B6EF00EF3324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992E652327F1B6EF00EF3324 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		992E652A27F1B71000EF3324 /* LongPressGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGesture.swift; sourceTree = "<group>"; };
+		992E652C27F1C54200EF3324 /* MagnificationGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */,
-				992E652A27F1B71000EF3324 /* LongPressGesture.swift */,
 				992E651E27F1B6EC00EF3324 /* ContentView.swift */,
+				992E652A27F1B71000EF3324 /* LongPressGesture.swift */,
+				992E652C27F1C54200EF3324 /* MagnificationGesture.swift */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
 				992E652227F1B6EF00EF3324 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */,
+				992E652D27F1C54200EF3324 /* MagnificationGesture.swift in Sources */,
 				992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */,
 				992E652B27F1B71000EF3324 /* LongPressGesture.swift in Sources */,
 			);
