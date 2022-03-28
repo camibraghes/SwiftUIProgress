@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LongPressGesture: View {
     
-    @State var isComplete: Bool = false
+    @State var isComplete: Bool = false  
     @State var isSuccess: Bool = false
     
     var body: some View {
