@@ -62,19 +62,6 @@ struct LongPressGesture: View {
                }
             }
         }
-        
-       
-//        Text(isComplete ? "Completed" : "Not Complete")
-//            .padding()
-//            .padding(.horizontal)
-//            .background(isComplete ? Color.green : Color.gray)
-//            .cornerRadius(10)
-////            .onTapGesture {
-////                isComplete.toggle()
-////            }
-//            .onLongPressGesture(minimumDuration: 1.0) {
-//                isComplete.toggle()
-//            }
     }
 }
 
