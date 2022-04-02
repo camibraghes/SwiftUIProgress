@@ -37,7 +37,7 @@ struct ScroolReaderView: View {
             ScrollView {
                 ScrollViewReader { proxi in
                     ForEach(0..<50) { index in
-                        Text("This in item #\(index)")
+                        Text("This is item #\(index)")
                             .font(.headline)
                             .frame(height: 200)
                             .frame(maxWidth: .infinity)

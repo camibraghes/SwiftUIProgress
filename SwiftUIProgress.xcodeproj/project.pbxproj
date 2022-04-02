@@ -17,6 +17,7 @@
 		992E654F27F331F100EF3324 /* DragGestureView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E654E27F331F100EF3324 /* DragGestureView2.swift */; };
 		992E655127F36E2700EF3324 /* ScroolReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E655027F36E2700EF3324 /* ScroolReaderView.swift */; };
 		992E655327F47D5F00EF3324 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E655227F47D5F00EF3324 /* GeometryReaderView.swift */; };
+		992E655527F4BB9E00EF3324 /* MultipleSheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		992E654E27F331F100EF3324 /* DragGestureView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView2.swift; sourceTree = "<group>"; };
 		992E655027F36E2700EF3324 /* ScroolReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScroolReaderView.swift; sourceTree = "<group>"; };
 		992E655227F47D5F00EF3324 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
+		992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				992E654E27F331F100EF3324 /* DragGestureView2.swift */,
 				992E655027F36E2700EF3324 /* ScroolReaderView.swift */,
 				992E655227F47D5F00EF3324 /* GeometryReaderView.swift */,
+				992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
 				992E652227F1B6EF00EF3324 /* Preview Content */,
 			);
@@ -162,6 +165,7 @@
 				992E654D27F2344300EF3324 /* DragGestureView.swift in Sources */,
 				992E655327F47D5F00EF3324 /* GeometryReaderView.swift in Sources */,
 				992E655127F36E2700EF3324 /* ScroolReaderView.swift in Sources */,
+				992E655527F4BB9E00EF3324 /* MultipleSheetsView.swift in Sources */,
 				992E654F27F331F100EF3324 /* DragGestureView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
