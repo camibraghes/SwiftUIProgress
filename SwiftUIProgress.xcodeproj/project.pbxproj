@@ -19,6 +19,9 @@
 		992E655327F47D5F00EF3324 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E655227F47D5F00EF3324 /* GeometryReaderView.swift */; };
 		992E655527F4BB9E00EF3324 /* MultipleSheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */; };
 		9963CF6327F9B1E300110EA3 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9963CF6227F9B1E300110EA3 /* MaskView.swift */; };
+		9963CF6527FB420F00110EA3 /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9963CF6427FB420F00110EA3 /* SoundsView.swift */; };
+		9963CF6827FB4B3900110EA3 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9963CF6727FB4B3900110EA3 /* tada.mp3 */; };
+		9963CF6A27FB4B4200110EA3 /* xylophone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9963CF6927FB4B4200110EA3 /* xylophone.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		992E655227F47D5F00EF3324 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetsView.swift; sourceTree = "<group>"; };
 		9963CF6227F9B1E300110EA3 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
+		9963CF6427FB420F00110EA3 /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
+		9963CF6727FB4B3900110EA3 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
+		9963CF6927FB4B4200110EA3 /* xylophone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xylophone.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 				992E655227F47D5F00EF3324 /* GeometryReaderView.swift */,
 				992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */,
 				9963CF6227F9B1E300110EA3 /* MaskView.swift */,
+				9963CF6427FB420F00110EA3 /* SoundsView.swift */,
+				9963CF6627FB4B1B00110EA3 /* Sounds */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
 				992E652227F1B6EF00EF3324 /* Preview Content */,
 			);
@@ -89,6 +97,15 @@
 				992E652327F1B6EF00EF3324 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9963CF6627FB4B1B00110EA3 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9963CF6927FB4B4200110EA3 /* xylophone.mp3 */,
+				9963CF6727FB4B3900110EA3 /* tada.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				992E652427F1B6EF00EF3324 /* Preview Assets.xcassets in Resources */,
+				9963CF6A27FB4B4200110EA3 /* xylophone.mp3 in Resources */,
 				992E652127F1B6EF00EF3324 /* Assets.xcassets in Resources */,
+				9963CF6827FB4B3900110EA3 /* tada.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +189,7 @@
 				992E655327F47D5F00EF3324 /* GeometryReaderView.swift in Sources */,
 				992E655127F36E2700EF3324 /* ScroolReaderView.swift in Sources */,
 				992E655527F4BB9E00EF3324 /* MultipleSheetsView.swift in Sources */,
+				9963CF6527FB420F00110EA3 /* SoundsView.swift in Sources */,
 				992E654F27F331F100EF3324 /* DragGestureView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
