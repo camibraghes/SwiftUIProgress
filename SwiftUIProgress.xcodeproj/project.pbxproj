@@ -25,6 +25,7 @@
 		9963CF6C27FCB4B100110EA3 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9963CF6B27FCB4B100110EA3 /* Haptics.swift */; };
 		9963CF6E28042E7B00110EA3 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9963CF6D28042E7B00110EA3 /* LocalNotification.swift */; };
 		99FE559C2807006A001602E7 /* HashableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE559B2807006A001602E7 /* HashableView.swift */; };
+		99FE559E280721B2001602E7 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE559D280721B2001602E7 /* Arrays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		9963CF6B27FCB4B100110EA3 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		9963CF6D28042E7B00110EA3 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		99FE559B2807006A001602E7 /* HashableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableView.swift; sourceTree = "<group>"; };
+		99FE559D280721B2001602E7 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				9963CF6B27FCB4B100110EA3 /* Haptics.swift */,
 				9963CF6D28042E7B00110EA3 /* LocalNotification.swift */,
 				99FE559B2807006A001602E7 /* HashableView.swift */,
+				99FE559D280721B2001602E7 /* Arrays.swift */,
 				9963CF6627FB4B1B00110EA3 /* Sounds */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
 				992E652227F1B6EF00EF3324 /* Preview Content */,
@@ -193,6 +196,7 @@
 				9963CF6E28042E7B00110EA3 /* LocalNotification.swift in Sources */,
 				99FE559C2807006A001602E7 /* HashableView.swift in Sources */,
 				9963CF6327F9B1E300110EA3 /* MaskView.swift in Sources */,
+				99FE559E280721B2001602E7 /* Arrays.swift in Sources */,
 				992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */,
 				992E652D27F1C54200EF3324 /* MagnificationGesture.swift in Sources */,
 				992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */,
