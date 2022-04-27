@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7650715A280EBC5200D737D1 /* CoreDataRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76507159280EBC5200D737D1 /* CoreDataRelation.swift */; };
 		7650715D280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7650715B280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld */; };
+		7650715F281975A300D737D1 /* BackgroundThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7650715E281975A300D737D1 /* BackgroundThread.swift */; };
 		992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */; };
 		992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651E27F1B6EC00EF3324 /* ContentView.swift */; };
 		992E652127F1B6EF00EF3324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992E652027F1B6EF00EF3324 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		76507159280EBC5200D737D1 /* CoreDataRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelation.swift; sourceTree = "<group>"; };
 		7650715C280EBE9400D737D1 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
+		7650715E281975A300D737D1 /* BackgroundThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThread.swift; sourceTree = "<group>"; };
 		992E651927F1B6EC00EF3324 /* SwiftUIProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProgressApp.swift; sourceTree = "<group>"; };
 		992E651E27F1B6EC00EF3324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				99FE559B2807006A001602E7 /* HashableView.swift */,
 				99FE559D280721B2001602E7 /* Arrays.swift */,
 				76507159280EBC5200D737D1 /* CoreDataRelation.swift */,
+				7650715E281975A300D737D1 /* BackgroundThread.swift */,
 				7650715B280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld */,
 				9963CF6627FB4B1B00110EA3 /* Sounds */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
@@ -205,6 +208,7 @@
 				7650715D280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld in Sources */,
 				9963CF6327F9B1E300110EA3 /* MaskView.swift in Sources */,
 				99FE559E280721B2001602E7 /* Arrays.swift in Sources */,
+				7650715F281975A300D737D1 /* BackgroundThread.swift in Sources */,
 				992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */,
 				992E652D27F1C54200EF3324 /* MagnificationGesture.swift in Sources */,
 				992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */,
