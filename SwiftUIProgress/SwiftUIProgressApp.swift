@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIProgressApp: App {
     var body: some Scene {
         WindowGroup {
-            CodableProtocol()
+            DownloadWithEscaping()
         }
     }
 }

@@ -14,6 +14,7 @@
 		76507163281AF7D300D737D1 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76507162281AF7D300D737D1 /* Typealias.swift */; };
 		76507165281C043B00D737D1 /* Escaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76507164281C043B00D737D1 /* Escaping.swift */; };
 		76507167281F0D8800D737D1 /* CodableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76507166281F0D8800D737D1 /* CodableProtocol.swift */; };
+		76507169282057C700D737D1 /* DownloadWithEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76507168282057C700D737D1 /* DownloadWithEscaping.swift */; };
 		992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */; };
 		992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651E27F1B6EC00EF3324 /* ContentView.swift */; };
 		992E652127F1B6EF00EF3324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992E652027F1B6EF00EF3324 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		76507162281AF7D300D737D1 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		76507164281C043B00D737D1 /* Escaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Escaping.swift; sourceTree = "<group>"; };
 		76507166281F0D8800D737D1 /* CodableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableProtocol.swift; sourceTree = "<group>"; };
+		76507168282057C700D737D1 /* DownloadWithEscaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscaping.swift; sourceTree = "<group>"; };
 		992E651927F1B6EC00EF3324 /* SwiftUIProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProgressApp.swift; sourceTree = "<group>"; };
 		992E651E27F1B6EC00EF3324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				76507162281AF7D300D737D1 /* Typealias.swift */,
 				76507164281C043B00D737D1 /* Escaping.swift */,
 				76507166281F0D8800D737D1 /* CodableProtocol.swift */,
+				76507168282057C700D737D1 /* DownloadWithEscaping.swift */,
 				7650715B280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld */,
 				9963CF6627FB4B1B00110EA3 /* Sounds */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
@@ -228,6 +231,7 @@
 				992E652D27F1C54200EF3324 /* MagnificationGesture.swift in Sources */,
 				992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */,
 				992E652B27F1B71000EF3324 /* LongPressGesture.swift in Sources */,
+				76507169282057C700D737D1 /* DownloadWithEscaping.swift in Sources */,
 				992E654D27F2344300EF3324 /* DragGestureView.swift in Sources */,
 				76507163281AF7D300D737D1 /* Typealias.swift in Sources */,
 				992E655327F47D5F00EF3324 /* GeometryReaderView.swift in Sources */,
