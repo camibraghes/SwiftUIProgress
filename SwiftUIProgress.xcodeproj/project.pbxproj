@@ -17,6 +17,7 @@
 		76507169282057C700D737D1 /* DownloadWithEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76507168282057C700D737D1 /* DownloadWithEscaping.swift */; };
 		765071AD2822DEA500D737D1 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071AC2822DEA500D737D1 /* DownloadWithCombine.swift */; };
 		765071B1282412DB00D737D1 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071B0282412DB00D737D1 /* Timers.swift */; };
+		765071B328258E8200D737D1 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071B228258E8200D737D1 /* SubscriberView.swift */; };
 		992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */; };
 		992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651E27F1B6EC00EF3324 /* ContentView.swift */; };
 		992E652127F1B6EF00EF3324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992E652027F1B6EF00EF3324 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		76507168282057C700D737D1 /* DownloadWithEscaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscaping.swift; sourceTree = "<group>"; };
 		765071AC2822DEA500D737D1 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		765071B0282412DB00D737D1 /* Timers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
+		765071B228258E8200D737D1 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
 		992E651927F1B6EC00EF3324 /* SwiftUIProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProgressApp.swift; sourceTree = "<group>"; };
 		992E651E27F1B6EC00EF3324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				76507168282057C700D737D1 /* DownloadWithEscaping.swift */,
 				765071AC2822DEA500D737D1 /* DownloadWithCombine.swift */,
 				765071B0282412DB00D737D1 /* Timers.swift */,
+				765071B228258E8200D737D1 /* SubscriberView.swift */,
 				7650715B280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld */,
 				9963CF6627FB4B1B00110EA3 /* Sounds */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
@@ -246,6 +249,7 @@
 				992E655127F36E2700EF3324 /* ScroolReaderView.swift in Sources */,
 				992E655527F4BB9E00EF3324 /* MultipleSheetsView.swift in Sources */,
 				9963CF6527FB420F00110EA3 /* SoundsView.swift in Sources */,
+				765071B328258E8200D737D1 /* SubscriberView.swift in Sources */,
 				992E654F27F331F100EF3324 /* DragGestureView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
