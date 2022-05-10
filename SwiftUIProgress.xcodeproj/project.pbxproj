@@ -18,6 +18,7 @@
 		765071AD2822DEA500D737D1 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071AC2822DEA500D737D1 /* DownloadWithCombine.swift */; };
 		765071B1282412DB00D737D1 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071B0282412DB00D737D1 /* Timers.swift */; };
 		765071B328258E8200D737D1 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071B228258E8200D737D1 /* SubscriberView.swift */; };
+		765071B928298A6700D737D1 /* FileManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071B828298A6700D737D1 /* FileManagerData.swift */; };
 		992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */; };
 		992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651E27F1B6EC00EF3324 /* ContentView.swift */; };
 		992E652127F1B6EF00EF3324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992E652027F1B6EF00EF3324 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		765071AC2822DEA500D737D1 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		765071B0282412DB00D737D1 /* Timers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
 		765071B228258E8200D737D1 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
+		765071B828298A6700D737D1 /* FileManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerData.swift; sourceTree = "<group>"; };
 		992E651927F1B6EC00EF3324 /* SwiftUIProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProgressApp.swift; sourceTree = "<group>"; };
 		992E651E27F1B6EC00EF3324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,11 +116,13 @@
 				992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */,
 				9963CF6227F9B1E300110EA3 /* MaskView.swift */,
 				9963CF6427FB420F00110EA3 /* SoundsView.swift */,
+				9963CF6627FB4B1B00110EA3 /* Sounds */,
 				9963CF6B27FCB4B100110EA3 /* Haptics.swift */,
 				9963CF6D28042E7B00110EA3 /* LocalNotification.swift */,
 				99FE559B2807006A001602E7 /* HashableView.swift */,
 				99FE559D280721B2001602E7 /* Arrays.swift */,
 				76507159280EBC5200D737D1 /* CoreDataRelation.swift */,
+				7650715B280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld */,
 				7650715E281975A300D737D1 /* BackgroundThread.swift */,
 				7650716028199B3F00D737D1 /* WeakSelf.swift */,
 				76507162281AF7D300D737D1 /* Typealias.swift */,
@@ -128,8 +132,7 @@
 				765071AC2822DEA500D737D1 /* DownloadWithCombine.swift */,
 				765071B0282412DB00D737D1 /* Timers.swift */,
 				765071B228258E8200D737D1 /* SubscriberView.swift */,
-				7650715B280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld */,
-				9963CF6627FB4B1B00110EA3 /* Sounds */,
+				765071B828298A6700D737D1 /* FileManagerData.swift */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
 				992E652227F1B6EF00EF3324 /* Preview Content */,
 			);
@@ -230,6 +233,7 @@
 				7650715A280EBC5200D737D1 /* CoreDataRelation.swift in Sources */,
 				99FE559C2807006A001602E7 /* HashableView.swift in Sources */,
 				7650716128199B3F00D737D1 /* WeakSelf.swift in Sources */,
+				765071B928298A6700D737D1 /* FileManagerData.swift in Sources */,
 				765071AD2822DEA500D737D1 /* DownloadWithCombine.swift in Sources */,
 				7650715D280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld in Sources */,
 				9963CF6327F9B1E300110EA3 /* MaskView.swift in Sources */,
