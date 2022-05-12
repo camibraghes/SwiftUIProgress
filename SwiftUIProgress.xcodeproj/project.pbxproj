@@ -20,6 +20,15 @@
 		765071B328258E8200D737D1 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071B228258E8200D737D1 /* SubscriberView.swift */; };
 		765071B928298A6700D737D1 /* FileManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071B828298A6700D737D1 /* FileManagerData.swift */; };
 		765071BB282ACA6700D737D1 /* CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071BA282ACA6700D737D1 /* CacheImage.swift */; };
+		765071C2282BAEA800D737D1 /* DownloadingImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071C1282BAEA800D737D1 /* DownloadingImages.swift */; };
+		765071C4282BF6D300D737D1 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071C3282BF6D300D737D1 /* PhotoModel.swift */; };
+		765071C6282BF84800D737D1 /* DownloadingImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071C5282BF84800D737D1 /* DownloadingImagesViewModel.swift */; };
+		765071C8282BFB2A00D737D1 /* PhotoModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071C7282BFB2A00D737D1 /* PhotoModelDataService.swift */; };
+		765071CA282D40A700D737D1 /* DownloadingImagesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071C9282D40A700D737D1 /* DownloadingImagesRow.swift */; };
+		765071CC282D429100D737D1 /* DownloadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071CB282D429100D737D1 /* DownloadingImageView.swift */; };
+		765071CE282D455500D737D1 /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071CD282D455500D737D1 /* ImageLoadingViewModel.swift */; };
+		765071D0282D59DA00D737D1 /* PhotoModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071CF282D59DA00D737D1 /* PhotoModelCacheManager.swift */; };
+		765071D2282D5EE200D737D1 /* PhotoMoldelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765071D1282D5EE200D737D1 /* PhotoMoldelFileManager.swift */; };
 		992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */; };
 		992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E651E27F1B6EC00EF3324 /* ContentView.swift */; };
 		992E652127F1B6EF00EF3324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992E652027F1B6EF00EF3324 /* Assets.xcassets */; };
@@ -55,6 +64,15 @@
 		765071B228258E8200D737D1 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
 		765071B828298A6700D737D1 /* FileManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerData.swift; sourceTree = "<group>"; };
 		765071BA282ACA6700D737D1 /* CacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImage.swift; sourceTree = "<group>"; };
+		765071C1282BAEA800D737D1 /* DownloadingImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImages.swift; sourceTree = "<group>"; };
+		765071C3282BF6D300D737D1 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		765071C5282BF84800D737D1 /* DownloadingImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesViewModel.swift; sourceTree = "<group>"; };
+		765071C7282BFB2A00D737D1 /* PhotoModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelDataService.swift; sourceTree = "<group>"; };
+		765071C9282D40A700D737D1 /* DownloadingImagesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesRow.swift; sourceTree = "<group>"; };
+		765071CB282D429100D737D1 /* DownloadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageView.swift; sourceTree = "<group>"; };
+		765071CD282D455500D737D1 /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
+		765071CF282D59DA00D737D1 /* PhotoModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelCacheManager.swift; sourceTree = "<group>"; };
+		765071D1282D5EE200D737D1 /* PhotoMoldelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMoldelFileManager.swift; sourceTree = "<group>"; };
 		992E651927F1B6EC00EF3324 /* SwiftUIProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProgressApp.swift; sourceTree = "<group>"; };
 		992E651E27F1B6EC00EF3324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +106,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		765071BC282BADE900D737D1 /* DownloadingImages */ = {
+			isa = PBXGroup;
+			children = (
+				765071C0282BAE5700D737D1 /* Utilities */,
+				765071BF282BAE3200D737D1 /* ViewModels */,
+				765071BE282BAE2800D737D1 /* Views */,
+				765071BD282BAE2000D737D1 /* Models */,
+			);
+			path = DownloadingImages;
+			sourceTree = "<group>";
+		};
+		765071BD282BAE2000D737D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				765071C3282BF6D300D737D1 /* PhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		765071BE282BAE2800D737D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				765071C1282BAEA800D737D1 /* DownloadingImages.swift */,
+				765071C9282D40A700D737D1 /* DownloadingImagesRow.swift */,
+				765071CB282D429100D737D1 /* DownloadingImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		765071BF282BAE3200D737D1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				765071C5282BF84800D737D1 /* DownloadingImagesViewModel.swift */,
+				765071CD282D455500D737D1 /* ImageLoadingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		765071C0282BAE5700D737D1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				765071C7282BFB2A00D737D1 /* PhotoModelDataService.swift */,
+				765071CF282D59DA00D737D1 /* PhotoModelCacheManager.swift */,
+				765071D1282D5EE200D737D1 /* PhotoMoldelFileManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		992E651027F1B6EC00EF3324 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +202,7 @@
 				765071B228258E8200D737D1 /* SubscriberView.swift */,
 				765071B828298A6700D737D1 /* FileManagerData.swift */,
 				765071BA282ACA6700D737D1 /* CacheImage.swift */,
+				765071BC282BADE900D737D1 /* DownloadingImages */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
 				992E652227F1B6EF00EF3324 /* Preview Content */,
 			);
@@ -232,30 +299,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				9963CF6C27FCB4B100110EA3 /* Haptics.swift in Sources */,
+				765071C2282BAEA800D737D1 /* DownloadingImages.swift in Sources */,
 				9963CF6E28042E7B00110EA3 /* LocalNotification.swift in Sources */,
 				7650715A280EBC5200D737D1 /* CoreDataRelation.swift in Sources */,
 				99FE559C2807006A001602E7 /* HashableView.swift in Sources */,
+				765071CA282D40A700D737D1 /* DownloadingImagesRow.swift in Sources */,
 				7650716128199B3F00D737D1 /* WeakSelf.swift in Sources */,
 				765071B928298A6700D737D1 /* FileManagerData.swift in Sources */,
 				765071AD2822DEA500D737D1 /* DownloadWithCombine.swift in Sources */,
 				7650715D280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld in Sources */,
 				9963CF6327F9B1E300110EA3 /* MaskView.swift in Sources */,
 				76507165281C043B00D737D1 /* Escaping.swift in Sources */,
+				765071C6282BF84800D737D1 /* DownloadingImagesViewModel.swift in Sources */,
+				765071CC282D429100D737D1 /* DownloadingImageView.swift in Sources */,
 				765071BB282ACA6700D737D1 /* CacheImage.swift in Sources */,
 				76507167281F0D8800D737D1 /* CodableProtocol.swift in Sources */,
 				99FE559E280721B2001602E7 /* Arrays.swift in Sources */,
 				7650715F281975A300D737D1 /* BackgroundThread.swift in Sources */,
 				992E651F27F1B6EC00EF3324 /* ContentView.swift in Sources */,
+				765071CE282D455500D737D1 /* ImageLoadingViewModel.swift in Sources */,
 				992E652D27F1C54200EF3324 /* MagnificationGesture.swift in Sources */,
+				765071D2282D5EE200D737D1 /* PhotoMoldelFileManager.swift in Sources */,
 				992E651D27F1B6EC00EF3324 /* SwiftUIProgressApp.swift in Sources */,
+				765071C4282BF6D300D737D1 /* PhotoModel.swift in Sources */,
 				992E652B27F1B71000EF3324 /* LongPressGesture.swift in Sources */,
 				76507169282057C700D737D1 /* DownloadWithEscaping.swift in Sources */,
+				765071D0282D59DA00D737D1 /* PhotoModelCacheManager.swift in Sources */,
 				992E654D27F2344300EF3324 /* DragGestureView.swift in Sources */,
 				76507163281AF7D300D737D1 /* Typealias.swift in Sources */,
 				765071B1282412DB00D737D1 /* Timers.swift in Sources */,
 				992E655327F47D5F00EF3324 /* GeometryReaderView.swift in Sources */,
 				992E655127F36E2700EF3324 /* ScroolReaderView.swift in Sources */,
 				992E655527F4BB9E00EF3324 /* MultipleSheetsView.swift in Sources */,
+				765071C8282BFB2A00D737D1 /* PhotoModelDataService.swift in Sources */,
 				9963CF6527FB420F00110EA3 /* SoundsView.swift in Sources */,
 				765071B328258E8200D737D1 /* SubscriberView.swift in Sources */,
 				992E654F27F331F100EF3324 /* DragGestureView2.swift in Sources */,
