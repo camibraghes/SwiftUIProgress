@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-//struct PostModel: Identifiable, Codable {
-//    let userId: Int
-//    let id = Int
-//    let title: String
-//    let body: String
-// 
-//}
 class DownloadWithEscapingViewModel: ObservableObject {
     
     @Published var posts: [PostModel] = []
@@ -35,9 +28,9 @@ class DownloadWithEscapingViewModel: ObservableObject {
                 }
             } else {
                 print("No data returned")
+            }
         }
     }
-}
     
     func downloadData(fromURL url: URL, completionHandler: @escaping (_ data: Data?) -> ())  {
         
@@ -51,7 +44,7 @@ class DownloadWithEscapingViewModel: ObservableObject {
                 completionHandler(nil)
                 return
             }
-        
+            
             completionHandler(data)
         }.resume()
     }

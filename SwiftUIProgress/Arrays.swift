@@ -25,40 +25,38 @@ class ArrayModificationViewModel: ObservableObject {
         updateFilteredArray()
     }
     
-    
- 
     func updateFilteredArray() {
-//    MARK: First Method - Sort
-/*        filteredArray = dataArray.sorted(by: { user1, user2 in
-                return user1.point > user2.point
-            })
+        //    MARK: First Method - Sort
+        /*        filteredArray = dataArray.sorted(by: { user1, user2 in
+         return user1.point > user2.point
+         })
          filteredArray = dataArray.sorted(by: { $0.point < $1.point })
-*/
-   
-//    MARK: Second Method - Filtrer
-/*         filteredArray = dataArray.filter({ (user) -> Bool in
-              return !user.isVerified
-            })
-            filteredArray = dataArray.filter({ $0.isVerified})
- */
- 
-//    MARK: Third Method - Map
-/*        mappedArray = dataArray.map({ (user) -> String in
-            return user.name ?? "Unknown"
-        })
-        mappedArray = dataArray.map({$0.name})
-        mappedArray = dataArray.compactMap({ (user) -> String? in
-            return user.name
-        })
-        mappedArray = dataArray.compactMap({$0.name})
- */
+         */
+        
+        //    MARK: Second Method - Filtrer
+        /*         filteredArray = dataArray.filter({ (user) -> Bool in
+         return !user.isVerified
+         })
+         filteredArray = dataArray.filter({ $0.isVerified})
+         */
+        
+        //    MARK: Third Method - Map
+        /*        mappedArray = dataArray.map({ (user) -> String in
+         return user.name ?? "Unknown"
+         })
+         mappedArray = dataArray.map({$0.name})
+         mappedArray = dataArray.compactMap({ (user) -> String? in
+         return user.name
+         })
+         mappedArray = dataArray.compactMap({$0.name})
+         */
         
         mappedArray = dataArray
-                        .sorted(by: { $0.point > $1.point})
-                        .filter({ $0.isVerified })
-                        .compactMap({ $0.name})
-            
-}
+            .sorted(by: { $0.point > $1.point})
+            .filter({ $0.isVerified })
+            .compactMap({ $0.name})
+    }
+    
     func getUsers() {
         let user1 = UserModel(name: "Nich", point: 50, isVerified: true)
         let user2 = UserModel(name: "Joe", point: 63, isVerified: false)
@@ -100,27 +98,26 @@ struct Arrays: View {
                         .background(Color.black.cornerRadius(10))
                 }
                 
-                
-// Foreach for dataArray var
-/*                ForEach(viewModel.filteredArray) { user in
-                    VStack(alignment: .leading){
-                        Text(user.name)
-                            .font(.headline)
-                            .foregroundColor(.brown)
-                        HStack() {
-                            Text("Points: \(user.point)")
-                            Spacer()
-                            if user.isVerified {
-                                Image(systemName: "flame.fill")
-                                    .foregroundColor(.brown)
-                            }
-                        }
-                        .foregroundColor(.brown)
-                    }
-                    .padding()
-                    .background(Color.primary.cornerRadius(8))
-               }
- */
+                // Foreach for dataArray var
+                /*                ForEach(viewModel.filteredArray) { user in
+                 VStack(alignment: .leading){
+                 Text(user.name)
+                 .font(.headline)
+                 .foregroundColor(.brown)
+                 HStack() {
+                 Text("Points: \(user.point)")
+                 Spacer()
+                 if user.isVerified {
+                 Image(systemName: "flame.fill")
+                 .foregroundColor(.brown)
+                 }
+                 }
+                 .foregroundColor(.brown)
+                 }
+                 .padding()
+                 .background(Color.primary.cornerRadius(8))
+                 }
+                 */
             }
         }
     }

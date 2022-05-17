@@ -52,11 +52,8 @@ struct DragGestureView: View {
         let percentageAsDouble = Double(percentange)
         let maxAngle: Double = 10
         return percentageAsDouble * maxAngle
-        
-        
     }
 }
-
 
 struct DragGestureView_Previews: PreviewProvider {
     static var previews: some View {

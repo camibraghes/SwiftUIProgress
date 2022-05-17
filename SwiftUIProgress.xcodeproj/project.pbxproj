@@ -109,10 +109,10 @@
 		765071BC282BADE900D737D1 /* DownloadingImages */ = {
 			isa = PBXGroup;
 			children = (
+				765071BD282BAE2000D737D1 /* Models */,
 				765071C0282BAE5700D737D1 /* Utilities */,
 				765071BF282BAE3200D737D1 /* ViewModels */,
 				765071BE282BAE2800D737D1 /* Views */,
-				765071BD282BAE2000D737D1 /* Models */,
 			);
 			path = DownloadingImages;
 			sourceTree = "<group>";
@@ -147,8 +147,8 @@
 		765071C0282BAE5700D737D1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				765071C7282BFB2A00D737D1 /* PhotoModelDataService.swift */,
 				765071CF282D59DA00D737D1 /* PhotoModelCacheManager.swift */,
+				765071C7282BFB2A00D737D1 /* PhotoModelDataService.swift */,
 				765071D1282D5EE200D737D1 /* PhotoMoldelFileManager.swift */,
 			);
 			path = Utilities;
@@ -173,38 +173,38 @@
 		992E651B27F1B6EC00EF3324 /* SwiftUIProgress */ = {
 			isa = PBXGroup;
 			children = (
-				992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */,
+				99FE559D280721B2001602E7 /* Arrays.swift */,
+				7650715E281975A300D737D1 /* BackgroundThread.swift */,
+				765071BA282ACA6700D737D1 /* CacheImage.swift */,
+				76507166281F0D8800D737D1 /* CodableProtocol.swift */,
 				992E651E27F1B6EC00EF3324 /* ContentView.swift */,
-				992E652A27F1B71000EF3324 /* LongPressGesture.swift */,
-				992E652C27F1C54200EF3324 /* MagnificationGesture.swift */,
+				76507159280EBC5200D737D1 /* CoreDataRelation.swift */,
+				765071AC2822DEA500D737D1 /* DownloadWithCombine.swift */,
+				76507168282057C700D737D1 /* DownloadWithEscaping.swift */,
 				992E654C27F2344300EF3324 /* DragGestureView.swift */,
 				992E654E27F331F100EF3324 /* DragGestureView2.swift */,
-				992E655027F36E2700EF3324 /* ScroolReaderView.swift */,
-				992E655227F47D5F00EF3324 /* GeometryReaderView.swift */,
-				992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */,
-				9963CF6227F9B1E300110EA3 /* MaskView.swift */,
-				9963CF6427FB420F00110EA3 /* SoundsView.swift */,
-				9963CF6627FB4B1B00110EA3 /* Sounds */,
-				9963CF6B27FCB4B100110EA3 /* Haptics.swift */,
-				9963CF6D28042E7B00110EA3 /* LocalNotification.swift */,
-				99FE559B2807006A001602E7 /* HashableView.swift */,
-				99FE559D280721B2001602E7 /* Arrays.swift */,
-				76507159280EBC5200D737D1 /* CoreDataRelation.swift */,
-				7650715B280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld */,
-				7650715E281975A300D737D1 /* BackgroundThread.swift */,
-				7650716028199B3F00D737D1 /* WeakSelf.swift */,
-				76507162281AF7D300D737D1 /* Typealias.swift */,
 				76507164281C043B00D737D1 /* Escaping.swift */,
-				76507166281F0D8800D737D1 /* CodableProtocol.swift */,
-				76507168282057C700D737D1 /* DownloadWithEscaping.swift */,
-				765071AC2822DEA500D737D1 /* DownloadWithCombine.swift */,
-				765071B0282412DB00D737D1 /* Timers.swift */,
-				765071B228258E8200D737D1 /* SubscriberView.swift */,
 				765071B828298A6700D737D1 /* FileManagerData.swift */,
-				765071BA282ACA6700D737D1 /* CacheImage.swift */,
-				765071BC282BADE900D737D1 /* DownloadingImages */,
+				992E655227F47D5F00EF3324 /* GeometryReaderView.swift */,
+				9963CF6B27FCB4B100110EA3 /* Haptics.swift */,
+				99FE559B2807006A001602E7 /* HashableView.swift */,
+				9963CF6D28042E7B00110EA3 /* LocalNotification.swift */,
+				992E652A27F1B71000EF3324 /* LongPressGesture.swift */,
+				992E652C27F1C54200EF3324 /* MagnificationGesture.swift */,
+				9963CF6227F9B1E300110EA3 /* MaskView.swift */,
+				992E655427F4BB9D00EF3324 /* MultipleSheetsView.swift */,
+				992E655027F36E2700EF3324 /* ScroolReaderView.swift */,
+				9963CF6427FB420F00110EA3 /* SoundsView.swift */,
+				765071B228258E8200D737D1 /* SubscriberView.swift */,
+				992E651C27F1B6EC00EF3324 /* SwiftUIProgressApp.swift */,
+				765071B0282412DB00D737D1 /* Timers.swift */,
+				76507162281AF7D300D737D1 /* Typealias.swift */,
+				7650716028199B3F00D737D1 /* WeakSelf.swift */,
 				992E652027F1B6EF00EF3324 /* Assets.xcassets */,
+				7650715B280EBE9400D737D1 /* CoreDataContainer.xcdatamodeld */,
+				765071BC282BADE900D737D1 /* DownloadingImages */,
 				992E652227F1B6EF00EF3324 /* Preview Content */,
+				9963CF6627FB4B1B00110EA3 /* Sounds */,
 			);
 			path = SwiftUIProgress;
 			sourceTree = "<group>";

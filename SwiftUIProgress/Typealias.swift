@@ -17,7 +17,7 @@ typealias TVModel = MovieModel
 
 struct Typealias: View {
     
-//    @State var item: MovieModel = MovieModel(title: "Title", director: "Joe", count: 5)
+    //    @State var item: MovieModel = MovieModel(title: "Title", director: "Joe", count: 5)
     @State var item: TVModel = TVModel(title: "TV Show", director: "Emmily", count: 10)
     
     var body: some View {
@@ -26,7 +26,6 @@ struct Typealias: View {
             Text(item.director)
             Text("\(item.count)")
         }
-        
     }
 }
 

@@ -10,7 +10,9 @@ import SwiftUI
 class LocalFileManager {
     
     static let instance = LocalFileManager()
+    
     let folderName = "MyApp_Images"
+    
     init() {
         createdFolderIfNeeded()
     }
@@ -81,7 +83,7 @@ class LocalFileManager {
             return nil
         }
         return UIImage(contentsOfFile: path)
-                
+        
     }
     
     func deleteImage(name: String) -> String {
@@ -110,7 +112,7 @@ class LocalFileManager {
             print("Errors getting data.")
             return nil
         }
-            return path
+        return path
     }
 }
 
@@ -150,44 +152,44 @@ struct FileManagerData: View {
     @StateObject var viewModel = FileManagerDataViewModel()
     
     var body: some View {
-       
-            NavigationView {
-                VStack {
-                    if let image = viewModel.image {
-                            Image(uiImage: image)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 200, height: 200)
-                                .clipped()
-                                .cornerRadius(10)
-                        }
-                    HStack {
-                        Button { viewModel.saveImage()
-                        } label: {
-                            Text("Save to File Manager")
-                                .font(.headline)
-                                .foregroundColor(Color.white)
-                                .frame(width: 200, height: 50)
-                                .background(.blue)
-                                .cornerRadius(10)
-                        }
-
-                        Button { viewModel.deleteImage()
-                        } label: {
-                            Text("Delete")
-                                .font(.headline)
-                                .foregroundColor(Color.white)
-                                .frame(width: 150, height: 50)
-                                .background(.red)
-                                .cornerRadius(10)
-                        }
-                    }
-                    Text(viewModel.infoMessage)
-                        .font(.callout)
-                        .foregroundColor(Color.blue)
-                        
-                    Spacer()
+        
+        NavigationView {
+            VStack {
+                if let image = viewModel.image {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 200, height: 200)
+                        .clipped()
+                        .cornerRadius(10)
                 }
+                HStack {
+                    Button { viewModel.saveImage()
+                    } label: {
+                        Text("Save to File Manager")
+                            .font(.headline)
+                            .foregroundColor(Color.white)
+                            .frame(width: 200, height: 50)
+                            .background(.blue)
+                            .cornerRadius(10)
+                    }
+                    
+                    Button { viewModel.deleteImage()
+                    } label: {
+                        Text("Delete")
+                            .font(.headline)
+                            .foregroundColor(Color.white)
+                            .frame(width: 150, height: 50)
+                            .background(.red)
+                            .cornerRadius(10)
+                    }
+                }
+                Text(viewModel.infoMessage)
+                    .font(.callout)
+                    .foregroundColor(Color.blue)
+                
+                Spacer()
+            }
             .navigationTitle("File Manager")
         }
     }

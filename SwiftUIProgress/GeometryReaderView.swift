@@ -21,11 +21,15 @@ struct GeometryReaderView: View {
                 ForEach(0..<20) { index in
                     GeometryReader { geometry in
                         RoundedRectangle(cornerRadius: 20)
-                        .rotation3DEffect(Angle(degrees: getPercentage(geo: geometry) * 20)
-                                          , axis: (x: 0.0, y: 1.0, z: 0.0))
+                            .rotation3DEffect(
+                                Angle(
+                                    degrees: getPercentage(geo: geometry) * 20
+                                ),
+                                axis: (x: 0.0, y: 1.0, z: 0.0)
+                            )
                     }
-                .frame(width: 300, height: 250)
-                .padding()
+                    .frame(width: 300, height: 250)
+                    .padding()
                 }
             }
         }

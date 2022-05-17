@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LongPressGesture: View {
     
-    @State var isComplete: Bool = false  
+    @State var isComplete: Bool = false
     @State var isSuccess: Bool = false
     
     var body: some View {
@@ -22,44 +22,44 @@ struct LongPressGesture: View {
                 .background(Color(.gray))
             
             HStack {
-             Text("Click here")
-                .padding()
-                .font(.headline)
-                .background(Color(.black))
-                .foregroundColor(.white)
-                .cornerRadius(10)
-                .onLongPressGesture(minimumDuration: 1.0, maximumDistance: 50) { (isPressing) in
-                    if isPressing {
-                        withAnimation(.easeInOut(duration: 1.0)) {
-                            isComplete = true
-                        }
-                    } else {
+                Text("Click here")
+                    .padding()
+                    .font(.headline)
+                    .background(Color(.black))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .onLongPressGesture(minimumDuration: 1.0, maximumDistance: 50) { (isPressing) in
+                        if isPressing {
+                            withAnimation(.easeInOut(duration: 1.0)) {
+                                isComplete = true
+                            }
+                        } else {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                                 if !isSuccess {
                                     withAnimation(.easeInOut(duration: 1.0)) {
                                         isComplete = false
+                                    }
                                 }
                             }
                         }
+                        
+                    } perform: {
+                        withAnimation(.easeInOut) {
+                            isSuccess = true
+                        }
                     }
-                    
-                } perform: {
-                    withAnimation(.easeInOut) {
-                        isSuccess = true
+                
+                
+                Text("Reset")
+                    .padding()
+                    .font(.headline)
+                    .background(Color(.black))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .onTapGesture {
+                        isComplete = false
+                        isSuccess = false
                     }
-                }
-
-            
-             Text("Reset")
-               .padding()
-               .font(.headline)
-               .background(Color(.black))
-               .foregroundColor(.white)
-               .cornerRadius(10)
-               .onTapGesture {
-                   isComplete = false
-                   isSuccess = false
-               }
             }
         }
     }

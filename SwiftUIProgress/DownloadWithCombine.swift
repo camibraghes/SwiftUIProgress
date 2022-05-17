@@ -13,7 +13,6 @@ struct PostModel: Identifiable, Codable {
     let id: Int
     let title: String
     let body: String
- 
 }
 
 class DownloadWithCombineViewModel: ObservableObject {
@@ -21,31 +20,28 @@ class DownloadWithCombineViewModel: ObservableObject {
     @Published var posts: [PostModel] = []
     var cancellable = Set<AnyCancellable>()
     
-    init() {
-    
-    }
+    init() {}
     
     func getPosts() {
-        
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else { return }
         
         //Combine Discussion
         /*
-        //1. Sign up for the monthly subscription for package to be delivered
-        //2. The company would make the package behind the scene
-        //3. Recieve the package at your front door
-        //4. Make sure the box isn't demaged
-        //5. Open and make sure the item is correct
-        //6. Use the item!!
-        //7. Cancellable at any time!
-        
-        //1. Create the publisher
-        //2. subscribe pub;isher on background thread (don't actually need this line because this data test publisher is alredy on backgroung thread)
-        //3. recieve on main thread
-        //4. tryMap (check that the data is good)
-        //5. decode (decode data into PostModels)
-        //6. sink (put the item in our app)
-        //7. store (cancel subscription id nedded)
+         //1. Sign up for the monthly subscription for package to be delivered
+         //2. The company would make the package behind the scene
+         //3. Recieve the package at your front door
+         //4. Make sure the box isn't demaged
+         //5. Open and make sure the item is correct
+         //6. Use the item!!
+         //7. Cancellable at any time!
+         
+         //1. Create the publisher
+         //2. subscribe pub;isher on background thread (don't actually need this line because this data test publisher is alredy on backgroung thread)
+         //3. recieve on main thread
+         //4. tryMap (check that the data is good)
+         //5. decode (decode data into PostModels)
+         //6. sink (put the item in our app)
+         //7. store (cancel subscription id nedded)
          */
         
         URLSession.shared.dataTaskPublisher(for: url)

@@ -20,7 +20,7 @@ struct ScroolReaderView: View {
                 .border(Color.gray)
                 .padding(.horizontal)
                 .keyboardType(.numberPad)
-                
+            
             Button("SCROLL NOW") {
                 withAnimation(.spring()) {
                     if let index = Int(textFieldText) {
@@ -33,7 +33,7 @@ struct ScroolReaderView: View {
             .font(.headline)
             .background(Color.gray)
             .cornerRadius(10)
-                        
+            
             ScrollView {
                 ScrollViewReader { proxi in
                     ForEach(0..<50) { index in

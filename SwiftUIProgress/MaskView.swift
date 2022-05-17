@@ -22,10 +22,13 @@ struct MaskView: View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Rectangle()
-//                    .foregroundColor(.yellow)
-                    .fill(LinearGradient(gradient: Gradient(colors: [.red, .blue]), startPoint: .leading, endPoint: .trailing))
+                    .fill(LinearGradient(
+                        gradient: Gradient(colors: [.red, .blue]),
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    ))
                     .frame(width: CGFloat(rating) / 5 * geometry.size.width)
-                    
+                
             }
         }
         .allowsHitTesting(false)

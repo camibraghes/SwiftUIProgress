@@ -11,11 +11,11 @@ import Combine
 class SubscriberViewModel: ObservableObject {
     
     @Published var count: Int = 0
-    var cancellables = Set<AnyCancellable>()
-    
     @Published var textFieldText: String = ""
     @Published var textIsValid: Bool = false
     @Published var showButton: Bool = false
+    
+    var cancellables = Set<AnyCancellable>()
     
     init() {
         setUpTimer()
@@ -32,7 +32,7 @@ class SubscriberViewModel: ObservableObject {
                 }
                 return false
             }
-//            .assign(to: \.textIsValid, on: self)
+        //            .assign(to: \.textIsValid, on: self)
             .sink(receiveValue: { [weak self] (isValid) in
                 self?.textIsValid = isValid
             })
@@ -40,19 +40,18 @@ class SubscriberViewModel: ObservableObject {
     }
     
     func setUpTimer() {
-       Timer
-        .publish(every: 1.0, on: .main, in: .common)
-        .autoconnect()
-        .sink { [weak self] _ in
-            guard let self = self  else {return}
-            self.count += 1
-            
-        }
-        .store(in: &cancellables)
+        Timer
+            .publish(every: 1.0, on: .main, in: .common)
+            .autoconnect()
+            .sink { [weak self] _ in
+                guard let self = self  else {return}
+                self.count += 1
+                
+            }
+            .store(in: &cancellables)
     }
     
     func addButtonSubscriber() {
-        
         $textIsValid
             .combineLatest($count)
             .sink { [weak self] (isValid, count) in
@@ -94,11 +93,8 @@ struct SubscriberView: View {
                     }
                     .font(.title)
                     .padding(.trailing)
-                    
                 }
-            Button {
-
-            } label: {
+            Button {} label: {
                 Text("Submit".uppercased())
                     .font(.headline)
                     .foregroundColor(Color.white)

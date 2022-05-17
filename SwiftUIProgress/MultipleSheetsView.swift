@@ -40,7 +40,6 @@ struct NextSheet: View {
     var body: some View {
         Text(selectedModel.name)
             .font(.largeTitle)
-        
     }
 }
 

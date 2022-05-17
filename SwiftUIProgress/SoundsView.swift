@@ -20,7 +20,6 @@ class SoundManager: ObservableObject {
     var player: AVAudioPlayer?
     
     func playSound(sound: SoundOption ) {
-        
         guard let url = Bundle.main.url(forResource: sound.rawValue , withExtension: "mp3") else { return }
         
         do {
@@ -30,7 +29,6 @@ class SoundManager: ObservableObject {
             print("Error playing sound.\(error.localizedDescription)")
         }
     }
-    
 }
 
 struct SoundsView: View {

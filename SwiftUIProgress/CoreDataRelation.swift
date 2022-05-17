@@ -10,6 +10,7 @@ import CoreData
 
 class CoreDataManager {
     static let instance = CoreDataManager()
+    
     let container: NSPersistentContainer
     let context: NSManagedObjectContext
     
@@ -26,9 +27,9 @@ class CoreDataManager {
     func save() {
         do {
             try context.save()
-                print("Saved Successfully")
+            print("Saved Successfully")
         } catch let error {
-                print("Error saving Core Data.\(error.localizedDescription)")
+            print("Error saving Core Data.\(error.localizedDescription)")
         }
     }
 }
@@ -51,7 +52,7 @@ class CoreDataRelationViewModel: ObservableObject {
         
         let sort = NSSortDescriptor(keyPath: \BusinessEntity.name, ascending: true)
         request.sortDescriptors = [sort]
-    
+        
         //let filter = NSPredicate(format: "name == %@", "Apple")
         //request.predicate = filter
         
@@ -96,11 +97,9 @@ class CoreDataRelationViewModel: ObservableObject {
     }
     
     func updateBusiness() {
-        
         let existingBusiness = businesses[2]
         existingBusiness.addToDepartments(departments[1])
         save()
-        
     }
     
     func addBusiness() {
@@ -118,7 +117,7 @@ class CoreDataRelationViewModel: ObservableObject {
         
         //add new business to existing employee:
         //newBusiness.addToEmployees(<#T##value: EmployeeEntity##EmployeeEntity#>)
-
+        
     }
     
     func addDepartment() {
@@ -225,7 +224,7 @@ struct CoreDataRelation_Previews: PreviewProvider {
 }
 
 struct BusinessView: View {
-        
+    
     let entity: BusinessEntity
     
     var body: some View {
@@ -257,7 +256,6 @@ struct BusinessView: View {
     }
 }
 
-
 struct DepartmentView: View {
     
     let entity: DepartmentEntity
@@ -274,6 +272,7 @@ struct DepartmentView: View {
                     Text(business.name ?? "")
                 }
             }
+            
             if let employees = entity.employees?.allObjects as? [EmployeeEntity] {
                 Text("Employees:")
                     .bold()
@@ -300,6 +299,7 @@ struct EmployeeView: View {
                 .bold()
             
             Text("Age: \(entity.age)")
+            
             Text("Date joined: \(entity.dateJoined ?? Date())")
             
             Text("Business:")

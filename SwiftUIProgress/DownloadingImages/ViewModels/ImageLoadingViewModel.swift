@@ -15,8 +15,8 @@ class ImageLoadingViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     
     var cancellable = Set<AnyCancellable>()
-    let manager = PhotoModelCacheManager.instance
     
+    let manager = PhotoModelCacheManager.instance
     let urlString: String
     let imageKey: String
     
@@ -37,19 +37,18 @@ class ImageLoadingViewModel: ObservableObject {
     }
     
     func downloadImage() {
-        
         print("Downloadin image now")
         isLoading = true
-    guard let url = URL(string: urlString) else {
-        isLoading = false
-        return
-    }
-    
-    URLSession.shared.dataTaskPublisher(for: url)
+        guard let url = URL(string: urlString) else {
+            isLoading = false
+            return
+        }
+        
+        URLSession.shared.dataTaskPublisher(for: url)
             .map { UIImage(data: $0.data)}
-//            .map { (data, response) -> UIImage? in
-//                return UIImage(data: data)
-//            }
+        //            .map { (data, response) -> UIImage? in
+        //                return UIImage(data: data)
+        //            }
             .receive(on: DispatchQueue.main)
             .sink { [weak self] (_) in
                 self?.isLoading = false
@@ -57,10 +56,10 @@ class ImageLoadingViewModel: ObservableObject {
                 guard
                     let self = self,
                     let image = returnedImage else { return }
-                    self.image = image
+                self.image = image
                 self.manager.add(key: self.imageKey as NSString, value: image)
             }
             .store(in: &cancellable)
-
+        
     }
 }

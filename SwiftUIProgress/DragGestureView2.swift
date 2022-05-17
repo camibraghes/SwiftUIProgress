@@ -25,17 +25,17 @@ struct DragGesrureView2: View {
                     DragGesture()
                         .onChanged { value in
                             withAnimation(.spring()) {
-                            currentDragOffset = value.translation.height
-                        }
+                                currentDragOffset = value.translation.height
+                            }
                             
-                    }
+                        }
                         .onEnded { value in
                             withAnimation(.spring()) {
                                 if currentDragOffset < -150 {
                                     endingOffsetY = -startingOffsetY
                                     MySignUpView().isChevronUp = false
-
-                                
+                                    
+                                    
                                 } else if endingOffsetY != 0 && currentDragOffset > 150 {
                                     endingOffsetY = 0
                                     MySignUpView().isChevronUp = true
@@ -43,7 +43,7 @@ struct DragGesrureView2: View {
                                 currentDragOffset = 0
                             }
                         }
-                        
+                    
                 )
         }
         .ignoresSafeArea(edges: .bottom)

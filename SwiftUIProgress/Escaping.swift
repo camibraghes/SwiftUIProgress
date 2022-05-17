@@ -23,8 +23,8 @@ class EscapingViewModel: ObservableObject {
     
     func downloadData2(completionHandler: (_ data: String) -> Void)  {
         completionHandler("New data2!")
-        }
-     
+    }
+    
     func downloadData3(completionHandler: @escaping (_ data: String) -> Void)  {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             completionHandler("New data3!")
@@ -48,7 +48,6 @@ class EscapingViewModel: ObservableObject {
 
 struct DownloadResult {
     let data: String
- 
 }
 
 typealias DownloadCompletion = (DownloadResult) ->()

@@ -10,6 +10,7 @@ import SwiftUI
 class CacheManager {
     
     static let instance = CacheManager()
+    
     private init() {}
     
     var imageCache: NSCache<NSString, UIImage> = {
@@ -17,7 +18,7 @@ class CacheManager {
         cache.countLimit = 100
         cache.totalCostLimit = 1024 * 1024 * 100
         return cache
-        }()
+    }()
     
     func add(image: UIImage, name: String) -> String {
         imageCache.setObject(image, forKey: name as NSString)
@@ -39,9 +40,10 @@ class CacheImageCacheImageViewModel: ObservableObject {
     @Published var startingImage: UIImage? = nil
     @Published var cachedImage: UIImage? = nil
     @Published var infoMessage: String = ""
+    
     let imageName: String = "steve"
     let manager = CacheManager.instance
-
+    
     init() {
         getImageFromAssetsFolder()
     }
@@ -73,19 +75,19 @@ class CacheImageCacheImageViewModel: ObservableObject {
 struct CacheImage: View {
     
     @StateObject var viewModel = CacheImageCacheImageViewModel()
-
     
     var body: some View {
         NavigationView {
             VStack {
                 if let image = viewModel.startingImage {
                     Image(uiImage: image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 200, height: 200)
-                            .clipped()
-                            .cornerRadius(10)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 200, height: 200)
+                        .clipped()
+                        .cornerRadius(10)
                 }
+                
                 Text(viewModel.infoMessage)
                     .font(.headline)
                     .foregroundColor(Color.green)
@@ -100,7 +102,7 @@ struct CacheImage: View {
                             .background(.blue)
                             .cornerRadius(10)
                     }
-
+                    
                     Button { viewModel.removeFromCache()
                     } label: {
                         Text("Delete from Cache")
@@ -124,20 +126,19 @@ struct CacheImage: View {
                 
                 if let image = viewModel.cachedImage {
                     Image(uiImage: image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 200, height: 200)
-                            .clipped()
-                            .cornerRadius(10)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 200, height: 200)
+                        .clipped()
+                        .cornerRadius(10)
                 }
                 Spacer()
-
+                
             }
         }
         .navigationTitle("Cache")
     }
 }
-
 
 struct CacheImage_Previews: PreviewProvider {
     static var previews: some View {

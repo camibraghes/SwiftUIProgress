@@ -11,10 +11,10 @@ import SwiftUI
 class PhotoMoldelFileManager {
     
     static let instance = PhotoMoldelFileManager()
+    
     let folderName = "downloade_photos"
-    private init() {
-        
-    }
+    
+    private init() {}
     
     private func createFolderIfNeeded() {
         guard let url = getFolderPath() else {return}
@@ -48,7 +48,7 @@ class PhotoMoldelFileManager {
     func add(key: String, value: UIImage) {
         guard
             let data = value.pngData(),
-                let url = getImagePath(key: key) else {return}
+            let url = getImagePath(key: key) else {return}
         do {
             try data.write(to: url)
         } catch let error {

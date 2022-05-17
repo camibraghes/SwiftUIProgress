@@ -11,7 +11,7 @@ import CoreLocation
 
 class NotificationManager {
     
-    static var instance = NotificationManager() 
+    static var instance = NotificationManager()
     
     func requestAuthorization() {
         let option: UNAuthorizationOptions = [.alert, .sound, .badge]
@@ -26,29 +26,31 @@ class NotificationManager {
     
     func scheduleNotification() {
         
-//      Time notification
+        //      Time notification
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 4.0, repeats: true)
         
-//        Calendar notification
+        //        Calendar notification
         
-//        var dateComponents = DateComponents()
-//        dateComponents.hour = 20
-//        dateComponents.minute = 40
-//        let trigger = UNCalendarNotificationTrigger(dateMatching:                     dateComponents, repeats: false)
+        //        var dateComponents = DateComponents()
+        //        dateComponents.hour = 20
+        //        dateComponents.minute = 40
+        //        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
         
-//        Location notification
+        //        Location notification
         
-//        let coordinate = CLLocationCoordinate2D(
-//            latitude: 25.00,
-//            longitude: -23.44)
-//        let region = CLCircularRegion(
-//            center: coordinate,
-//            radius: 125,
-//            identifier: UUID().uuidString)
-//        region.notifyOnEntry = true
-//        region.notifyOnExit = false
-//        let trigger = UNLocationNotificationTrigger(region: region, repeats: false)
+        //        let coordinate = CLLocationCoordinate2D(
+        //            latitude: 25.00,
+        //            longitude: -23.44
+        //        )
+        //        let region = CLCircularRegion(
+        //            center: coordinate,
+        //            radius: 125,
+        //            identifier: UUID().uuidString
+        //        )
+        //        region.notifyOnEntry = true
+        //        region.notifyOnExit = false
+        //        let trigger = UNLocationNotificationTrigger(region: region, repeats: false)
         
         let content = UNMutableNotificationContent()
         content.title = "This is my first notification"
@@ -59,7 +61,8 @@ class NotificationManager {
         let request = UNNotificationRequest(
             identifier: UUID().uuidString,
             content: content,
-            trigger: trigger)
+            trigger: trigger
+        )
         UNUserNotificationCenter.current().add(request)
     }
     
@@ -82,8 +85,8 @@ struct LocalNotification: View {
                 NotificationManager.instance.cancelNotification()
             }
         }
-            .onAppear {
-                UIApplication.shared.applicationIconBadgeNumber = 0
+        .onAppear {
+            UIApplication.shared.applicationIconBadgeNumber = 0
         }
     }
 }

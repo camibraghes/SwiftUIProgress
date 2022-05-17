@@ -13,6 +13,7 @@ class PhotoModelDataService {
     static let instance = PhotoModelDataService()
     
     @Published var photoModel: [PhotoModel] = []
+    
     var cancellable = Set<AnyCancellable>()
     
     private init() {
@@ -38,9 +39,9 @@ class PhotoModelDataService {
                 self?.photoModel = returnedPhotoModels
             }
             .store(in: &cancellable)
-
+        
     }
-
+    
     private func handleOutput(output: URLSession.DataTaskPublisher.Output) throws ->Data {
         guard
             let reponse = output.response as? HTTPURLResponse,

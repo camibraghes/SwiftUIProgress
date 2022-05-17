@@ -11,6 +11,7 @@ import Combine
 class DownloadingImagesViewModel: ObservableObject {
     
     @Published var dataArray: [PhotoModel] = []
+    
     var cancellable = Set<AnyCancellable>()
     
     let dataService = PhotoModelDataService.instance
